@@ -8,7 +8,7 @@ const quotes = [
         author: "Anonymous",
     },
     {
-        quote: "First, solve the problem, Then, Wirte the code.",
+        quote: "First, solve the problem, Then, write the code.",
         author: "John Johnson",
     },
     {
@@ -49,7 +49,7 @@ const quotes = [
     },
     {
         quote: "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
-        author: "",
+        author: "Linus Torvalds",
     },
     {
         quote: "Programming is learned by writing programs.",
@@ -67,8 +67,8 @@ const author = document.querySelector("#quote span:last-child");
 function getQuote() {
     const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-    quote.innerText = todaysQuote.quote;
-    author.innerText = todaysQuote.author;
+    quote.innerText = `"${todaysQuote.quote}"`;
+    author.innerText = `- ${todaysQuote.author} -`;
 }
 
 getQuote();

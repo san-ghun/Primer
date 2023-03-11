@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "main.css";
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-family: sans-serif;
+    font-size: 8em;
+}
+
+#name {
+    margin-bottom: 30px;
+}
+
+#greeting {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#input-name {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 36px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+#input-name::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+#input-name:focus,
+#input-name:active {
+    outline: none;
+}
+
+#weather {
+    position: absolute;
+    font-size: initial;
+    font-size: 12px;
+    top: 25px;
+    right: 25px;
+}
+
+#add-todo {
+    width: 300px;
+}
+
+#todo-name {
+    font-size: 22px;
+}
+
+#todo-list {
+    margin-bottom: 20px;
+}
+
+#quote {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
 .hidden {
     display: none;
 }

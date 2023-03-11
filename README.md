@@ -4,4 +4,4 @@
 
 Purpose: Practice some basic of Vanilla JS.
 
-Thanks to [momentumdash.com](https://momentumdash.com/), [nomadcoders.co](https://nomadcoders.co/) and [니콜라스](https://github.com/serranoarevalo).
+Thanks to [momentumdash.com](https://momentumdash.com/), [nomadcoders.co](https://nomadcoders.co/) and [니코쌤](https://github.com/serranoarevalo).

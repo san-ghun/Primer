@@ -20,15 +20,19 @@ function paintGreeting(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
-
-const savedUsername = localStorage.getItem(USERNAME_KEY);
-
-if (savedUsername === null) {
-    // show the form
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
+function getName() {
     loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-    // show the greeting
-    paintGreeting(savedUsername);
+    
+    const savedUsername = localStorage.getItem(USERNAME_KEY);
+    
+    if (savedUsername === null) {
+        // show the form
+        loginForm.classList.remove(HIDDEN_CLASSNAME);
+        loginForm.addEventListener("submit", onLoginSubmit);
+    } else {
+        // show the greeting
+        paintGreeting(savedUsername);
+    }
 }
+
+getName();

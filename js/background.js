@@ -11,10 +11,12 @@ const images = [
     "marek-piwnicki-FrQjnVgiFPQ-unsplash.jpg",
 ];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+function getBackground() {
+    const chosenImage = images[Math.floor(Math.random() * images.length)];
+    const bgImage = document.createElement("img");
 
-const bgImage = document.createElement("img");
+    bgImage.src = `img/${chosenImage}`;
+    document.body.appendChild(bgImage);
+}
 
-bgImage.src = `img/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+getBackground();

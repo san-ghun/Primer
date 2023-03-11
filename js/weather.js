@@ -1,6 +1,7 @@
-import { API_KEY_OPW } from "./key.js";
+// import { API_KEY_OPW } from "./key.js";
 
-const API_KEY = API_KEY_OPW;
+// const API_KEY = API_KEY_OPW;
+const API_KEY = "8fca801914cc80dddf578ceaaed3e728";
 
 function onGeoSuccess(position) {
     const lat = position.coords.latitude;
